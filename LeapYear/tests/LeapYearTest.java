@@ -21,4 +21,9 @@ public class LeapYearTest {
     void yearsDivisbleBy4ButNot100() {
         assertEquals(true, leapYear.isLeapYear(2008));
     }
+
+    @Test
+    void yearsNotDivisbleBy4() {
+        assertEquals(false, leapYear.isLeapYear(2009));
+    }
 }
